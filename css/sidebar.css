@@ -1,0 +1,76 @@
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  width: 300px;
+  font-family: "Raleway SemiBold";
+  cursor: default;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Raleway;
+}
+
+.sidebar__logo>img {
+  width: 35px;
+  margin-right: 6px;
+}
+
+.sidebar__logo>span {
+  font-size: 2em;
+  flex: 1;
+  color: var(--text-light);
+  font-family: "Khand Bold";
+}
+
+.sidebar__logo__button {
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.sidebar__logo__button>svg {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar__logo__button.selected>svg {
+  fill: var(--blue-color);
+  stroke: var(--blue-color);
+}
+
+.sidebar__groupment {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.groupment__elements {
+  overflow-y: auto;
+}
+
+.sidebar__groupment__title {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  font-family: "Raleway SemiBold";
+  color: var(--text-light);
+}
+
+.sidebar__groupment__title>span {
+  flex: 1;
+}
+
+.sidebar__groupment__title>svg {
+  fill: var(--text-light);
+  margin-right: 5px;
+}

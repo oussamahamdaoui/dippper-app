@@ -1,0 +1,118 @@
+.input-toolbar {
+  background-color: var(--light-bg-color);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  user-select: none;
+  padding: 3px 8px;
+}
+
+.input-toolbar__group.modes {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+  user-select: none;
+}
+
+.input-toolbar__quick-action {
+  margin: 3px 7px;
+  width: 90px;
+  min-height: 30px;
+  border: 1px solid var(--text-color);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in;
+  flex: 0 0 auto;
+  font-size: 12px;
+}
+
+.input-toolbar__group.forever {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin-right: 7px;
+  border-right: 2px solid var(--text-color);
+}
+
+.input-toolbar__group .recording .stop_recording {
+  display: none;
+}
+
+.input-toolbar .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+.input-toolbar__group .recording.on .stop_recording {
+  position: absolute;
+  top: -40px;
+  background-color: var(--red-color);
+  color: var(--light);
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-toolbar__group .recording {
+  position: relative;
+}
+
+.input-toolbar__group.suggest {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin-right: 7px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.input-toolbar__group.suggest>.suggestion {
+  text-align: center;
+  flex: 1;
+  border-left: 1px solid var(--text-color);
+}
+
+.input-toolbar__group.suggest>.suggestion.selected {
+  color: var(--blue-color);
+}
+
+.input-toolbar__group.suggest>.suggestion:nth-child(1) {
+  border-left: none;
+}
+
+.input-toolbar__quick-action.selected {
+  border: 1px solid var(--blue-color);
+}
+
+.input-toolbar__quick-action:hover {
+  background-color: var(--text-color);
+  color: var(--light-bg-color);
+}
+
+.input-toolbar__quick-action:hover svg {
+  fill: var(--light-bg-color);
+}
+
+.input-toolbar svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--text-color);
+}
+
+.input-toolbar__group.modes::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  height: 1px;
+}
+
+.input-toolbar__group.modes::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}

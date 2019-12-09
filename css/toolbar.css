@@ -1,0 +1,60 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--light-bg-color);
+}
+
+.toolbar__search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toolbar__search>svg {
+  fill: var(--text-color);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 4px;
+  top: 50%;
+  transform: translateY(calc(-50% + 1px));
+}
+
+.toolbar__search>input {
+  color: var(--text-color);
+  background-color: var(--light-bg-color);
+  height: 22px;
+  border: none;
+  width: 150px;
+  padding: 0px 24px;
+  border-radius: 20px;
+}
+
+.toolbar__title {
+  flex: 1;
+  font-size: 1.4em;
+  font-family: "Raleway SemiBold";
+}
+
+.toolbar__button {
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.toolbar__button>svg {
+  fill: var(--text-color);
+}
+
+.toolbar__button.blue>svg {
+  fill: var(--blue-color);
+}
+
+.toolbar__button.red>svg {
+  fill: var(--red-color);
+}
+
+.toolbar__button.green>svg {
+  fill: var(--green-color);
+}

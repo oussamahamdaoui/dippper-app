@@ -1,0 +1,29 @@
+{
+  "name": "dippper-app",
+  "productName": "dippper-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build-darwin": "electron-packager . --overwrite --icon media/logo.icns --out ./dist --ignore config.json"
+  },
+  "dependencies": {
+    "@cesium133/forgjs": "^2.1.4",
+    "@forgjs/noframework": "^1.1.1",
+    "@primer/octicons": "^9.2.0",
+    "codemirror": "^5.49.0",
+    "feather-icons": "^4.24.1",
+    "lowdb": "^1.0.0",
+    "simple-icons": "^1.18.0",
+    "socket.io-client": "^2.3.0",
+    "sortablejs": "^1.10.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.3",
+    "electron-packager": "^14.1.1"
+  }
+}

@@ -1,0 +1,119 @@
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.message__tools {
+  height: 24px;
+  background-color: var(--message-bg-color);
+  border-radius: 3px 3px 0px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0px 3px;
+}
+
+.message__tools svg {
+  fill: var(--text-color);
+  width: 19px;
+  height: 19px;
+  margin-right: 3px;
+  padding: 3px;
+  transition: all 200ms ease-in;
+}
+
+.message__tools svg:hover {
+  fill: var(--blue-color);
+  color: var(--blue-color);
+  transform: scale(1.4);
+}
+
+.message__data {
+  width: 60px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.message_time {
+  font-size: 13px;
+}
+
+.message__data img, .message__data svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.message__code {
+  width: 90%;
+}
+
+.message__code * {
+  cursor: default !important;
+}
+
+.message__code>.CodeMirror {
+  height: unset;
+  background-color: var(--message-bg-color);
+}
+
+.message__audio {
+  width: 90%;
+}
+
+.message__audio .audio_player {
+  display: flex;
+  margin-top: 5px;
+  background-color: var(--light-bg-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.message__audio .time {
+  width: 120px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message__audio .audio_player .play {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  width: 90px;
+  border-radius: 50px;
+}
+
+.message__audio .audio_player .play svg {
+  width: 18px;
+  height: 18px;
+}
+
+.message__audio .visualizer {
+  height: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message__audio .visualizer>div {
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  margin-right: 2px;
+  background-color: var(--blue-color);
+}
