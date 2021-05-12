@@ -13,7 +13,7 @@
     "@cesium133/forgjs": "^2.1.4",
     "@forgjs/noframework": "^1.1.1",
     "@primer/octicons": "^9.2.0",
-    "codemirror": "^5.49.0",
+    "codemirror": "^5.58.2",
     "feather-icons": "^4.24.1",
     "lowdb": "^1.0.0",
     "simple-icons": "^1.18.0",
